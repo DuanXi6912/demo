@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean id="myBook" 
+         class="com.example.demo.BeanCycle.MyBook"
+         init-method="customInit"
+         destroy-method="customDestroy">
+   <property name="bookName" value="Gone with the Wind"></property>
+   </bean>
+   <bean id="myBookProcessor" class="com.example.demo.BeanCycle.MyBookProcessor">
+   </bean>
+</beans>
